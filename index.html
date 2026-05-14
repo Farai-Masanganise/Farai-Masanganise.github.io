@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+    <title>Farai | Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+			<li><a href="#certificates">Certifications</a></li> 
+			<li><a href="#education">Education</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#references">Refrences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- HOME -->
+    <section id="home" class="section home">
+        <div class="container home-container">
+            <h1>Farai Dylan Masanganise</h1>
+            <h2>Beginner Programmer</h2>
+            <p>Building practical software and developing real-world programming skills.</p>
+        </div>
+		<!-- ABOUT -->
+		<div class="container about-container">
+			<h3 class="container-title">About Me</h3>
+			<div class="container-row">
+				<p class="about-text">
+					I am a motivated and adaptable Computer Science student seeking an attaché position in IT.
+					Currently I am learning and building projects to improving my technical skills.
+					I enjoy solving problems efficiently and creating useful applications.
+					My main focus on improving myself is through continuous learning.
+				</p>
+				<img src="images/profile.jpg" alt="Profile picture" class="about-pic">
+			</div>
+		</div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+        <div class="container projects-container">
+            <h3 class="container-title">Most Recent Projects</h3>
+            <div class="container-list" style="--cols: 2;">
+                <div class="container-card">
+                    <h5>GreenLink</h5>
+                    <p>
+                        Web-platform to connect generators of recyclable waste, collectors and recycling facilities.
+                    </p>
+                    <p>
+                        Tech: HTML, CSS, JavaScript, PHP, SQL
+                    </p>
+					<img src="images/projects/greenlink.png" alt="Project Image" class="card-pic">
+                    <a href="#">View Project Details</a>
+                </div>
+
+                <div class="container-card">
+                    <h5>Chapman Golf Club Membership Management System.</h5>
+                    <p>
+                        System to automate member registration, admin management, and event scheduling.
+                    </p>
+                    <p>
+                        Tech: C#, SQL
+                    </p>
+					<img src="your-image.jpg" alt="Project Image" class="card-pic placeholder">
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+			<div class="container-button">
+				<a href="projects.php" class="btn">View All Projects</a>
+			</div>
+        </div>
+    </section>
+	<!-- CERTIFICATES -->
+	<section id="certificates" class="section certificates">
+		<div class="container certificates-container">
+			<h3 class="container-title">Most Recent Certifications</h3>
+			<div class="container-list " style="--cols: 3;">
+				<div class="container-card">
+					<h5>Android Developer Fundamentals</h5>
+					<div class="card-row">
+					<p>Issuer: Udacity</p>
+					<p>Issued: 2025</p>
+					</div>
+					<img src="images/certs/udacityAndroid.png" alt="Certificate Image" class="card-pic" id="cardPic">
+					<div class="lightbox" id="lightbox">
+						<button class="lightbox-close" id="lightboxClose">&times;</button>
+						<img class="lightbox-img" id="lightboxImg">
+					</div>
+					<a href="https://www.udacity.com/certificate/e/a74ee7e4-72dd-11f0-9593-0bfdd1088c09" target="_blank" rel="noopener">View Certificate</a>
+				</div>
+				<div class="container-card">
+					<h5>Android Developer Fundamentals</h5>
+					<div class="card-row">
+					<p>Issuer: Udacity</p>
+					<p>Issued: 2025</p>
+					</div>
+					<img src="your-image.jpg" alt="Certificate Image" class="card-pic placeholder">					
+					<a href="https://www.udacity.com/certificate/e/a74ee7e4-72dd-11f0-9593-0bfdd1088c09" target="_blank" rel="noopener">View Certificate</a>
+				</div>			
+			</div>
+			<div class="container-button">
+				<a href="certificates.php" class="btn">View All Certificates</a>
+			</div>
+		</div>
+	</section>
+	<!-- EDUCATION -->
+	<section id="education" class="section education">
+		<div class="container education-container">
+			<h3 class="container-title">Formal Education</h3>
+			<div class="container-list" style="--cols: 3;">
+				<!-- Degree -->
+				<div class="container-card">
+					<h5>B-Tech Degree</h5>
+					<h6>Harare Institute of Technology<br>2024 – Present</h6>
+					<p>Honours in Computer Science<br>
+					<p>Key Performance:</p>
+
+					<ul class="course-list">
+						<li>Web Development – A</li>
+						<li>Data Communications and Networks – A</li>
+					</ul>
+
+					<p class="muted-note">
+						*Full Document Available Upon Request.
+					</p>
+				</div>
+				<!-- A Level -->
+				<div class="container-card">
+					<h5>A Level GCSE</h5>
+					<h6>Speciss College
+					<br>2023</h6>
+					<p>4 A Level Passes</p><br>
+					<P>Key Performance:</p>	
+					
+					<ul class="course-list">
+						<li>Computer Science – A</li>
+						<li>Physics – A</li>
+					</ul>	
+					
+					<p class="muted-note">
+						*Full Document Available Upon Request.
+					</p>
+				</div>
+				<!-- O Level -->
+				<div class="container-card">
+					<h5>O Level GCSE</h5>
+					<h6>Goromonzi High School
+					<br>2019 – 2022</h6>
+					<p>12 O Level Passes<br>
+					<p>Key Performance:</p>
+					
+					<ul class="course-list">
+						<li>Physics – A</li>
+						<li>Mathematics – B</li>
+					</ul>
+					
+					<p class="muted-note">
+						*Full Document Available Upon Request.
+					</p>
+				</div>
+			</div>	
+		</div>
+	</section>
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+        <div class="container skills-container">
+            <h3 class="container-title">Main Skills</h3>
+
+            <ul class="container-list" style="--cols: 3;">
+				<li class="container-card">Java</li>
+				<li class="container-card">C#</li>
+				<li class="container-card">C</li>
+				
+				<li class="container-card">HTML</li>
+				<li class="container-card">JavaScript</li>
+				<li class="container-card">CSS</li>
+				
+				<li class="container-card">Kotlin</li>
+				<li class="container-card">SQL</li>
+				<li class="container-card">Git</li>
+            </ul>
+        </div>
+    </section>	
+	<!-- REFERENCES -->
+	<section id="references" class="section references">
+		<div class="container references-container">
+			<h3 class="container-title">References</h3>
+			<div class="container-list" style="--cols: 3;">
+				<div class="container-card">
+					<h5>Mrs Farai </h5>
+					<p>Lecturer – Harare Institute of Technology</p>
+					<p>Address: Ganges Road, Belvedere, Harare</p>
+					<p>Tel: +263 782 805 999</p>
+					<p>Email: <a href="mailto:goromonzihighhead@zol.co.zw">goromonzihighhead@zol.co.zw</a></p>
+				</div>
+				
+				<div class="container-card">
+					<h5>Mrs Jane Mhini</h5>
+					<p>Director of Studies – Speciss</p>
+					<p>Address: Herbert Chitepo / 3rd Street, Harare</p>
+					<p>Tel: +263 242 708494-7</p>
+					<p>Email: <a href="mailto:jane@speciss.co.zw">jane@speciss.co.zw</a></p>
+				</div>
+				
+				<div class="container-card">
+					<h5>Mr Norman Gombera</h5>
+					<p>Headmaster – Goromonzi High School</p>
+					<p>Address: P Bag 1, Goromonzi</p>
+					<p>Tel: +263 782 805 999</p>
+					<p>Email: <a href="mailto:goromonzihighhead@zol.co.zw">goromonzihighhead@zol.co.zw</a></p>
+				</div>
+			</div>
+			<div class="container-button">
+				<a href="references.php" class="btn">View All References</a>
+			</div>			
+		</div>
+	</section>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container contact-container">
+            <h3 class="container-title">My Contact Details</h3>
+			<div class="container-list" style="--cols: 2;">
+				<div class="container-card">	
+					<span class="contact-type"><i data-lucide="phone"></i> Mobile:</span>
+					<span class="contact-detail">
+						<a href="tel:+263716325611">+263 716 325 611</a>
+					</span>
+				</div>
+
+				<div class="container-card">	
+					<span class="contact-type"><i data-lucide="mail"></i> Email:</span>
+					<span class="contact-detail">
+						<a href="mailto:fdylan.dev@gmail.com">fdylan.dev@gmail.com</a>
+					</span>
+				</div>
+
+				<div class="container-card">
+					<span class="contact-type"><i data-lucide="linkedin"></i> LinkedIn:</span>
+					<span class="contact-detail">
+						<a href="https://www.linkedin.com/in/developer-masanganisee/" target="_blank" rel="noopener noreferrer">
+							View Profile
+						</a>
+					</span>
+				</div>
+
+				<div class="container-card">					
+					<span class="contact-type"><i data-lucide="github"></i> GitHub:</span>
+					<span class="contact-detail">
+						<a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+							View Profile
+						</a>
+					</span>
+				</div>
+			</div>	
+		</div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <p>© 2026 Farai Dylan Masanganise</p>
+    </footer>	
+</body>
+	<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+	<script>lucide.createIcons();</script>
+	<script src="landing.js"></script>
+</html>
