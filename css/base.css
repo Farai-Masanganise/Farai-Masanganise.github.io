@@ -1,0 +1,193 @@
+/* =========================
+   RESET + BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-padding-top: 10vh;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+/* =========================
+   HEADINGS
+========================= */
+h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 750;
+    color: var(--main-heading);
+    margin-bottom: var(--space-sm);
+}
+
+h2 {
+    font-size: 2.0rem;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--main-subheading);
+    margin-bottom: var(--space-xs);
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 650;
+    color: var(--container-heading);
+    margin-bottom: var(--space-xs);
+}
+h4 {
+    font-size: 2.0rem;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--container-subheading);
+    margin-bottom: var(--space-xs);
+}
+h5 {
+    font-size: 1.8rem;
+    line-height: 1;
+    font-weight: 550;
+    color: var(--card-heading);
+    margin-bottom: var(--space-xs);
+}
+h6 {
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--card-subheading);
+	margin-bottom: var(--space-xs);
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--white-0);
+    margin-bottom: var(--space-xs);
+}
+/* =========================
+   Lists
+========================= */
+ul{
+	padding: 0;
+	margin: 0;	
+}
+li{
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--white-0);
+    margin-bottom: var(--space-xs);	
+}
+/* =========================
+   LINKS
+========================= */
+a {
+    color: var(--link-card);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--link-card-hover);
+	text-decoration: underline;
+}
+/* =========================
+   BUTTONS
+========================= */
+.btn,
+button {
+    padding: 8px 16px;
+    background-color: var(--bg-button);
+    color: var(--text-button);
+    border-radius: var(--radius);
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover,
+button:hover {
+    background-color: var(--bg-button-hover);
+    color: var(--text-button-hover);
+}
+
+/* =========================
+   RESPONSIVE TYPOGRAPHY + ELEMENTS
+========================= */
+
+/* Small devices (phones, <600px) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    h4 {
+        font-size: 1.6rem;
+    }
+    h5 {
+        font-size: 1.4rem;
+    }
+    h6, p, li {
+        font-size: 1rem;
+    }
+	h1, h2, h3, h4, h5, h6 {
+		padding: 0;
+		margin: 0;
+	}
+    .btn, button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    ul, li {
+        margin-bottom: var(--space-xs);
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 601px-1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    h5 {
+        font-size: 1.6rem;
+    }
+    h6, p, li {
+        font-size: 1.1rem;
+    }
+
+    .btn, button {
+        padding: 7px 14px;
+        font-size: 1rem;
+    }
+}
+
+/* Large devices (>1025px) */
+@media (min-width: 1025px) {
+
+}
