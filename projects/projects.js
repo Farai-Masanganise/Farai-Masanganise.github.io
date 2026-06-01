@@ -1,6 +1,6 @@
 //Load ALL Projects
 async function loadAllProjects() {
-    const response = await fetch('./data/projects.json');
+    const response = await fetch('././data/projects.json');
     const projects = await response.json();
 
     projects.sort((a, b) => new Date(b.date) - new Date(a.date));

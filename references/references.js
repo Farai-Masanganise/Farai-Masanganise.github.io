@@ -3,7 +3,7 @@ async function loadReferences() {
 
     if (!container) return;
 
-    const response = await fetch('./data/references.json');
+    const response = await fetch('././data/references.json');
     const references = await response.json();
 
     container.innerHTML = references.map(ref => `
