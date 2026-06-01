@@ -1,0 +1,37 @@
+ [
+    {
+      "type": "Mobile",
+      "icon": "phone",
+      "value": "+263 716 325 611",
+      "href": "tel:+263716325611"
+    },
+    {
+      "type": "Email",
+      "icon": "mail",
+      "value": "FDylan.Dev@gmail.com",
+      "href": "mailto:FDylan.Dev@gmail.com"
+    },
+    {
+      "type": "GitHub",
+      "icon": "github",
+      "value": "View Profile",
+      "href": "https://github.com/Farai-Masanganise"
+    },
+    {
+      "type": "LinkedIn",
+      "icon": "linkedin",
+      "value": "View Profile",
+      "href": "https://www.linkedin.com/in/developer-masanganisee"
+    },
+    {
+    "type": "WhatsApp",
+    "icon": "message-circle",
+    "value": "Chat on WhatsApp",
+    "href": "https://wa.me/263716325611"
+    },
+    {
+      "type": "Location",
+      "icon": "map-pin",
+      "value": "Harare, Zimbabwe"
+    }
+  ]

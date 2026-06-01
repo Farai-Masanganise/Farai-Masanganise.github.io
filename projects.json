@@ -1,0 +1,20 @@
+[
+    {
+        "id": "greenlink",
+        "title": "GreenLink",
+        "description": "Web-platform to connect generators of recyclable waste, collectors and recycling facilities.",
+        "tech": "HTML, CSS, JavaScript, PHP, SQL",
+        "image": "images/projects/greenlink.png",
+        "link": "project.php?id=greenlink",
+        "date": "2025-05-20"
+    },
+    {
+        "id": "chapman-golf",
+        "title": "Chapman Golf Club Membership Management System",
+        "description": "System to automate member registration, admin management, and event scheduling.",
+        "tech": "C#, SQL",
+        "image": "images/projects/chapman-golf.png",
+        "link": "project.php?id=chapman-golf",
+        "date": "2025-04-15"
+    }
+]
