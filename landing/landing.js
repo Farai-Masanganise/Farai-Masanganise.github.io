@@ -44,7 +44,7 @@ async function loadRecentProjects() {
             <p>${project.description}</p>
 
             <p>
-                Tech: ${project.tech.join(', ')}
+                Tech: ${project.tech}
             </p>
 
             <img
