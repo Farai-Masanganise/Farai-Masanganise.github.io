@@ -28,7 +28,7 @@ document.addEventListener("keydown", (e) => {
 
 //Dynamically Load Projects
 async function loadRecentProjects() {
-    const response = await fetch('././data/projects.json');
+    const response = await fetch('../data/projects.json');
     const projects = await response.json();
 
     projects.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -64,7 +64,7 @@ loadRecentProjects();
 
 //Load Recent Certificates
 async function loadRecentCertificates() {
-    const response = await fetch('././data/certificates.json');
+    const response = await fetch('../data/certificates.json');
     const certificates = await response.json();
 
     certificates.sort(
@@ -106,7 +106,7 @@ loadRecentCertificates();
 async function loadRecentReferences() {
     const container = document.getElementById('recent-references');
 
-    const response = await fetch('././data/references.json');
+    const response = await fetch('../data/references.json');
     const references = await response.json();
 
     const recentReferences = references.slice(0, 3);
@@ -133,51 +133,57 @@ async function loadRecentReferences() {
 
 loadRecentReferences();
 
-//Contact Info
-const container = document.getElementById("contact-list");
+async function loadContacts() {
+  //Contact Info
+  const container = document.getElementById("contact-list");
 
-contacts.forEach(item => {
-  const card = document.createElement("div");
-  card.className = "container-card";
+  const response = await fetch('../data/contacts.json');
+  const contacts = await response.json();
 
-  const type = document.createElement("span");
-  type.className = "contact-type";
+  contacts.forEach(item => {
+    const card = document.createElement("div");
+    card.className = "container-card";
 
-  const icon = document.createElement("i");
-  icon.setAttribute("data-lucide", item.icon);
+    const type = document.createElement("span");
+    type.className = "contact-type";
 
-  type.appendChild(icon);
-  type.append(` ${item.type}:`);
+    const icon = document.createElement("i");
+    icon.setAttribute("data-lucide", item.icon);
 
-  const detail = document.createElement("span");
-  detail.className = "contact-detail";
+    type.appendChild(icon);
+    type.append(` ${item.type}:`);
 
-  if (item.href) {
-    const link = document.createElement("a");
-    link.href = item.href;
-    link.textContent = item.value;
+    const detail = document.createElement("span");
+    detail.className = "contact-detail";
 
-    // external links only
-    if (!item.href.startsWith("tel:") && !item.href.startsWith("mailto:")) {
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
+    if (item.href) {
+      const link = document.createElement("a");
+      link.href = item.href;
+      link.textContent = item.value;
+
+      // external links only
+      if (!item.href.startsWith("tel:") && !item.href.startsWith("mailto:")) {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      }
+
+      detail.appendChild(link);
+    } else {
+      detail.textContent = item.value;
     }
 
-    detail.appendChild(link);
-  } else {
-    detail.textContent = item.value;
+    card.appendChild(type);
+    card.appendChild(detail);
+
+    container.appendChild(card);
+  });
+
+  if (window.lucide) {
+    lucide.createIcons();
   }
 
-  card.appendChild(type);
-  card.appendChild(detail);
-
-  container.appendChild(card);
-});
-
-if (window.lucide) {
-  lucide.createIcons();
 }
-
+loadContacts();
 
 //FooterHiding
 const footer = document.getElementById('footer');

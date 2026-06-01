@@ -3,7 +3,7 @@ async function loadAllCertificates() {
 
     if (!container) return;
 
-    const response = await fetch('././data/certificates.json');
+    const response = await fetch('../data/certificates.json');
     const certificates = await response.json();
 
     certificates.sort(
