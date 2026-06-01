@@ -4,7 +4,7 @@
     "title": "Android Developer Fundamentals",
     "issuer": "Udacity",
     "issued": "2025",
-    "image": "images/certs/udacityAndroid.png",
+    "image": "../images/certs/udacityAndroid.png",
     "certificateUrl": "https://www.udacity.com/certificate/e/a74ee7e4-72dd-11f0-9593-0bfdd1088c09",
     "date": "2025-08-01"
   },
@@ -13,7 +13,7 @@
     "title": "Google IT Support",
     "issuer": "Google",
     "issued": "2025",
-    "image": "images/certs/google-it.png",
+    "image": "../images/certs/google-it.png",
     "certificateUrl": "https://example.com/certificate",
     "date": "2025-07-15"
   },
@@ -22,7 +22,7 @@
     "title": "Google IT Support",
     "issuer": "Google",
     "issued": "2025",
-    "image": "images/certs/google-it.png",
+    "image": "../images/certs/google-it.png",
     "certificateUrl": "https://example.com/certificate",
     "date": "2025-07-15"
   }
