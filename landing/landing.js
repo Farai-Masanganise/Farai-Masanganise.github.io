@@ -28,7 +28,7 @@ document.addEventListener("keydown", (e) => {
 
 //Dynamically Load Projects
 async function loadRecentProjects() {
-    const response = await fetch('./projects.json');
+    const response = await fetch('./data/projects.json');
     const projects = await response.json();
 
     projects.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -64,7 +64,7 @@ loadRecentProjects();
 
 //Load Recent Certificates
 async function loadRecentCertificates() {
-    const response = await fetch('./certificates.json');
+    const response = await fetch('./data/certificates.json');
     const certificates = await response.json();
 
     certificates.sort(
@@ -106,7 +106,7 @@ loadRecentCertificates();
 async function loadRecentReferences() {
     const container = document.getElementById('recent-references');
 
-    const response = await fetch('./references.json');
+    const response = await fetch('./data/references.json');
     const references = await response.json();
 
     const recentReferences = references.slice(0, 3);
@@ -132,6 +132,7 @@ async function loadRecentReferences() {
 }
 
 loadRecentReferences();
+
 //Contact Info
 const container = document.getElementById("contact-list");
 
