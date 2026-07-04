@@ -1,9 +1,14 @@
-async function loadReferences() {
-    const container = document.getElementById('all-references');
+function renderLoadError(container, label) {
+  if (!container) return;
+  container.innerHTML = `<p class="muted-note">Unable to load ${label} right now. Please try again later.</p>`;
+}
 
-    if (!container) return;
+async function loadAllReferences() {
+  const container = document.getElementById('references-grid');
 
+  try {
     const response = await fetch('../data/references.json');
+    if (!response.ok) throw new Error(`Request failed: ${response.status}`);
     const references = await response.json();
 
     container.innerHTML = references.map(ref => `
@@ -24,6 +29,16 @@ async function loadReferences() {
             </p>
         </div>
     `).join('');
+  } catch (err) {
+    console.error('loadAllReferences failed:', err);
+    renderLoadError(container, 'references');
+  }
 }
 
-loadReferences();
+loadAllReferences();
+
+// Footer year
+const footerCopy = document.getElementById('footer-copy');
+if (footerCopy) {
+  footerCopy.textContent = `© ${new Date().getFullYear()} Farai Dylan Masanganise`;
+}

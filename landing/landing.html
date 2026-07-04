@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Farai Dylan Masanganise — Computer Science student portfolio: projects, certifications, education, and skills.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="../css/main.css">
-    <title>Farai | Portfolio</title>
+	<title>Farai | Portfolio</title>
 </head>
+
 <body>
-    <!-- NAVBAR -->
-    <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-			<li><a href="#certificates">Certifications</a></li> 
+	<a href="#home" class="skip-link">Skip to content</a>
+
+	<!-- NAVBAR -->
+	<nav class="nav" aria-label="Primary">
+		<ul class="nav-list">
+			<li><a href="#home">Home</a></li>
+			<li><a href="../projects/projects.html">Projects</a></li>
+			<li><a href="../certificates/certificates.html">Certifications</a></li>
 			<li><a href="#education">Education</a></li>
 			<li><a href="#skills">Skills</a></li>
-			<li><a href="#references">Refrences</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- HOME -->
-    <section id="home" class="section home">
-        <div class="container home-container">
-            <h1>Farai Dylan Masanganise</h1>
-            <h2>Beginner Programmer</h2>
-            <p>Building practical software and developing real-world programming skills.</p>
-        </div>
+			<li><a href="../references/references.html">References</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- HOME -->
+	<section id="home" class="section home">
+		<div class="container home-container">
+			<h1>Farai Dylan Masanganise</h1>
+			<h2>Computer Science Student — Building Real Systems</h2>
+			<p>Building practical software and developing real-world programming skills.</p>
+		</div>
 		<!-- ABOUT -->
 		<div class="container about-container">
 			<h3 class="container-title">About Me</h3>
 			<div class="container-row">
 				<p class="about-text">
 					I am a motivated and adaptable Computer Science student seeking an attaché position in IT.
-					Currently I am learning and building projects to improving my technical skills.
+					Currently I am learning and building projects to improve my technical skills.
 					I enjoy solving problems efficiently and creating useful applications.
 					My main focus on improving myself is through continuous learning.
 				</p>
-				<img src="../images/profile.jpg" alt="Profile picture" class="about-pic">
+				<img src="../images/profile.jpg" alt="Portrait photo of Farai Dylan Masanganise" class="about-pic">
 			</div>
 		</div>
-    </section>
+	</section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section projects">
-        <div class="container projects-container">
-            <h3 class="container-title">Most Recent Projects</h3>
-            <div id="recent-projects" class="container-list" style="--cols: 2;">
-            </div>
+	<!-- PROJECTS -->
+	<section id="projects" class="section projects" data-index="01 — Projects">
+		<div class="container projects-container">
+			<h3 class="container-title">Most Recent Projects</h3>
+			<div id="recent-projects" class="container-list" style="--cols: 2;" aria-live="polite">
+			</div>
 			<div class="container-button">
 				<a href="../projects/projects.html" class="btn">View All Projects</a>
 			</div>
-        </div>
-    </section>
+		</div>
+	</section>
+
 	<!-- CERTIFICATES -->
-	<section id="certificates" class="section certificates">
+	<section id="certificates" class="section certificates" data-index="02 — Certifications">
 		<div class="container certificates-container">
 			<h3 class="container-title">Most Recent Certifications</h3>
-			<div id="recent-certificates" class="container-list " style="--cols: 3;">
+			<div id="recent-certificates" class="container-list" style="--cols: 3;" aria-live="polite">
 			</div>
 			<div class="container-button">
 				<a href="../certificates/certificates.html" class="btn">View All Certificates</a>
 			</div>
 		</div>
 	</section>
+
 	<!-- EDUCATION -->
-	<section id="education" class="section education">
+	<section id="education" class="section education" data-index="03 — Education">
 		<div class="container education-container">
 			<h3 class="container-title">Formal Education</h3>
 			<div class="container-list" style="--cols: 3;">
@@ -72,14 +86,12 @@
 				<div class="container-card">
 					<h5>B-Tech Degree</h5>
 					<h6>Harare Institute of Technology<br>2024 – Present</h6>
-					<p>Honours in Computer Science<br>
+					<p>Honours in Computer Science</p>
 					<p>Key Performance:</p>
-
 					<ul class="course-list">
 						<li>Web Development – A</li>
 						<li>Data Communications and Networks – A</li>
 					</ul>
-
 					<p class="muted-note">
 						*Full Document Available Upon Request.
 					</p>
@@ -87,16 +99,13 @@
 				<!-- A Level -->
 				<div class="container-card">
 					<h5>A Level GCSE</h5>
-					<h6>Speciss College
-					<br>2023</h6>
-					<p>4 A Level Passes</p><br>
-					<P>Key Performance:</p>	
-					
+					<h6>Speciss College<br>2023</h6>
+					<p>4 A Level Passes</p>
+					<p>Key Performance:</p>
 					<ul class="course-list">
 						<li>Computer Science – A</li>
 						<li>Physics – A</li>
-					</ul>	
-					
+					</ul>
 					<p class="muted-note">
 						*Full Document Available Upon Request.
 					</p>
@@ -104,72 +113,74 @@
 				<!-- O Level -->
 				<div class="container-card">
 					<h5>O Level GCSE</h5>
-					<h6>Goromonzi High School
-					<br>2019 – 2022</h6>
-					<p>12 O Level Passes<br>
+					<h6>Goromonzi High School<br>2019 – 2022</h6>
+					<p>12 O Level Passes</p>
 					<p>Key Performance:</p>
-					
 					<ul class="course-list">
 						<li>Physics – A</li>
 						<li>Mathematics – B</li>
 					</ul>
-					
 					<p class="muted-note">
 						*Full Document Available Upon Request.
 					</p>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</section>
-    <!-- SKILLS -->
-    <section id="skills" class="section skills">
-        <div class="container skills-container">
-            <h3 class="container-title">Main Skills</h3>
 
-            <ul class="container-list" style="--cols: 3;">
+	<!-- SKILLS -->
+	<section id="skills" class="section skills" data-index="04 — Skills">
+		<div class="container skills-container">
+			<h3 class="container-title">Main Skills</h3>
+			<ul class="container-list" style="--cols: 3;">
 				<li class="container-card">Java</li>
 				<li class="container-card">C#</li>
 				<li class="container-card">C</li>
-				
+
 				<li class="container-card">HTML</li>
 				<li class="container-card">JavaScript</li>
 				<li class="container-card">CSS</li>
-				
+
 				<li class="container-card">Kotlin</li>
 				<li class="container-card">SQL</li>
 				<li class="container-card">Git</li>
-            </ul>
-        </div>
-    </section>	
+			</ul>
+		</div>
+	</section>
+
 	<!-- REFERENCES -->
-	<section id="references" class="section references">
+	<section id="references" class="section references" data-index="05 — References">
 		<div class="container references-container">
 			<h3 class="container-title">References</h3>
-			<div id="recent-references" class="container-list" style="--cols: 3;">
-
+			<div id="recent-references" class="container-list" style="--cols: 3;" aria-live="polite">
 			</div>
 			<div class="container-button">
 				<a href="../references/references.html" class="btn">View All References</a>
-			</div>			
+			</div>
 		</div>
 	</section>
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-        <div class="container contact-container">
-            <h3 class="container-title">My Contact Details</h3>
- 	   		<div id="contact-list" class="container-list" style="--cols: 2;">
-	   		</div>
+
+	<!-- CONTACT -->
+	<section id="contact" class="section contact" data-index="06 — Contact">
+		<div class="container contact-container">
+			<h3 class="container-title">My Contact Details</h3>
+			<div id="contact-list" class="container-list" style="--cols: 2;" aria-live="polite">
+			</div>
 		</div>
-    </section>
-    <!-- FOOTER -->
-    <footer class="footer" id="footer">
-        <p>© 2026 Farai Dylan Masanganise</p>
-    </footer>
-	<div id="lightbox" class="lightbox">
-    	<img id="lightboxImg" alt="Expanded image">
+	</section>
+
+	<!-- FOOTER -->
+	<footer class="footer" id="footer">
+		<p id="footer-copy"></p>
+	</footer>
+
+	<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Expanded image view">
+		<img id="lightboxImg" alt="">
 	</div>
-</body>
+
 	<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 	<script>lucide.createIcons();</script>
 	<script src="landing.js"></script>
+</body>
+
 </html>

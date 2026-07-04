@@ -1,14 +1,40 @@
+// Image popup (shared pattern with landing.js)
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+
+document.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("card-pic")) return;
+  lightbox.classList.add("active");
+  lightboxImg.src = e.target.src;
+  lightboxImg.alt = e.target.alt || "";
+  document.body.style.overflow = "hidden";
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("active");
+  lightboxImg.src = "";
+  document.body.style.overflow = "";
+}
+lightbox.addEventListener("click", () => closeLightbox());
+lightboxImg.addEventListener("click", (e) => e.stopPropagation());
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && lightbox.classList.contains("active")) closeLightbox();
+});
+
+function renderLoadError(container, label) {
+  if (!container) return;
+  container.innerHTML = `<p class="muted-note">Unable to load ${label} right now. Please try again later.</p>`;
+}
+
 async function loadAllCertificates() {
-    const container = document.getElementById('all-certificates');
+  const container = document.getElementById('certificates-grid');
 
-    if (!container) return;
-
+  try {
     const response = await fetch('../data/certificates.json');
+    if (!response.ok) throw new Error(`Request failed: ${response.status}`);
     const certificates = await response.json();
 
-    certificates.sort(
-        (a, b) => new Date(b.date) - new Date(a.date)
-    );
+    certificates.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     container.innerHTML = certificates.map(cert => `
         <div class="container-card">
@@ -23,6 +49,7 @@ async function loadAllCertificates() {
                 src="${cert.image}"
                 alt="${cert.title}"
                 class="card-pic"
+                loading="lazy"
             >
 
             <a
@@ -34,6 +61,16 @@ async function loadAllCertificates() {
             </a>
         </div>
     `).join('');
+  } catch (err) {
+    console.error('loadAllCertificates failed:', err);
+    renderLoadError(container, 'certifications');
+  }
 }
 
 loadAllCertificates();
+
+// Footer year
+const footerCopy = document.getElementById('footer-copy');
+if (footerCopy) {
+  footerCopy.textContent = `© ${new Date().getFullYear()} Farai Dylan Masanganise`;
+}

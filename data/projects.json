@@ -1,20 +1,46 @@
 [
+        {
+        "id": "propertyhill",
+        "title": "Propertyhill Realty Company Website Redesign",
+        "description": "Multi-page real estate website for a Harare-based property firm, built around a custom Art Deco design system with SQL-backed property listings.",
+        "category": "fullstack",
+        "tech": "HTML, CSS, JavaScript, PHP, SQL",
+        "image": "../images/projects/propertyhill.png",
+        "link": "../projects/projects.html?id=propertyhill",
+        "repoUrl": "",        
+        "date": "2026-07-04"
+    },
     {
         "id": "greenlink",
-        "title": "GreenLink",
+        "title": "HIT200 Product Development Project: GreenLink",
         "description": "Web-platform to connect generators of recyclable waste, collectors and recycling facilities.",
+        "category": "fullstack",
         "tech": "HTML, CSS, JavaScript, PHP, SQL",
         "image": "../images/projects/greenlink.png",
-        "link": "project.php?id=greenlink",
-        "date": "2025-05-20"
+        "link": "../projects/projects.html?id=greenlink",
+        "repoUrl": "", 
+        "date": "2026-04-19"
+    },
+        {
+        "id": "geofencing",
+        "title": "ICS2201 Mobile Application Development: GeoFencing",
+        "description": "Android Application for enhancing location based navigation with automated notifications when user enters predefined fence of a saved location.",
+        "category": "mobile",
+        "tech": "Java, XML",
+        "image": "../images/projects/geofencing.png",
+        "link": "../projects/projects.html?id=geofencing",
+        "repoUrl": "", 
+        "date": "2026-04-1"
     },
     {
         "id": "chapman-golf",
-        "title": "Chapman Golf Club Membership Management System",
-        "description": "System to automate member registration, admin management, and event scheduling.",
+        "title": "ICS1201 Visual Programming: Membership Management System",
+        "description": "Windows Forms System to automate member registration, admin management, and event scheduling for the Chapman Golf Club.",
+        "category": "fullstack",
         "tech": "C#, SQL",
         "image": "../images/projects/chapman-golf.png",
-        "link": "project.php?id=chapman-golf",
-        "date": "2025-04-15"
+        "link": "../projects/projects.html?id=chapman-golf",
+        "repoUrl": "",         
+        "date": "2025-03-28"
     }
 ]

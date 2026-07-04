@@ -1,2 +1,57 @@
-<div id="all-projects" class="container-list" style="--cols: 2;">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farai Dylan Masanganise — Full project archive: Full-Stack, Systems, Mobile, and Tools.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Projects | Farai</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+            <li><a href="../landing/landing.html#home">Home</a></li>
+            <li><a href="../projects/projects.html">Projects</a></li>
+            <li><a href="../certificates/certificates.html">Certifications</a></li>
+            <li><a href="../landing/landing.html#education">Education</a></li>
+            <li><a href="../landing/landing.html#skills">Skills</a></li>
+            <li><a href="../references/references.html">References</a></li>
+            <li><a href="../landing/landing.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="section projects-index" id="main-content" data-index="Archive">
+        <div class="container projects-index-container">
+            <h3 class="container-title">All Projects</h3>
+
+            <div class="filter-bar" role="tablist" aria-label="Filter projects by category">
+                <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+                <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack</button>
+                <button class="filter-btn" data-filter="systems" role="tab" aria-selected="false">Systems</button>
+                <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+                <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+            </div>
+
+            <div id="projects-grid" class="container-list projects-grid" style="--cols: 3;" aria-live="polite">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <p id="footer-copy"></p>
+    </footer>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Expanded image view">
+        <img id="lightboxImg" alt="">
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>lucide.createIcons();</script>
+    <script src="projects.js"></script>
+</body>
+</html>
