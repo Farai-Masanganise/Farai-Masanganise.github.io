@@ -42,3 +42,18 @@ const footerCopy = document.getElementById('footer-copy');
 if (footerCopy) {
   footerCopy.textContent = `© ${new Date().getFullYear()} Farai Dylan Masanganise`;
 }
+// Footer hiding
+const footer = document.getElementById('footer');
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY + window.innerHeight;
+  const pageHeight = document.documentElement.scrollHeight;
+
+  if (scrollPosition >= pageHeight - 50) {
+    footer.style.opacity = '1';
+    footer.style.pointerEvents = 'auto';
+  } else {
+    footer.style.opacity = '0';
+    footer.style.pointerEvents = 'none';
+  }
+});
