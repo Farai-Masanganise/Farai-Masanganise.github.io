@@ -40,13 +40,16 @@ This portfolio is designed to present my professional profile in a clean, access
 
 ```
 /
-├── index.html                     # Main landing page
+├── index.html                     # Redirect to main landing page
 ├── projects/
-│   └── projects.html              # Full projects listing
+│   ├── projects.html              # Full projects listing
+│   └── projects.js                # Dynamic loading from json
 ├── certificates/
-│   └── certificates.html          # Full certifications listing
+│   ├── certificates.html          # Full certifications listing
+│   └── certificates.js            # Dynamic loading from json
 ├── references/
-│   └── references.html            # Full references listing
+│   ├── references.html            # Full references listing
+│   └── references.js              # Dynamic loading from json
 ├── data/
 │   ├── projects.json              # All project entries
 │   ├── certificates.json          # All certification entries
@@ -55,6 +58,7 @@ This portfolio is designed to present my professional profile in a clean, access
 ├── css/
 │   └── main.css                   # Global styles
 ├── landing/
+│   ├── landing.html               # Main landing page
 │   └── landing.js                 # Main JavaScript (dynamic loading, lightbox, footer)
 └── images/
     ├── profile.jpg                # About Me portrait
