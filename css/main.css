@@ -57,8 +57,8 @@
     --signal-dim: #217261;
 
     /* Borders / subtle dividers */
-    --border: rgba(200, 220, 255, 0.14);
-    --border-strong: rgba(200, 220, 255, 0.28);
+    --border: rgba(200, 220, 255, 0.15);
+    --border-strong: rgba(200, 220, 255, 0.3);
     --grid-line: rgba(200, 220, 255, 0.05);
 
     /* Fonts */
@@ -414,21 +414,18 @@ button:hover {
     padding-bottom: 10vh;
     min-height: 100vh;
 }
-/* Every section after the first gets a hairline top rule and an
-   index mark — a structural device, not decoration, since these
-   sections genuinely are an ordered sequence through the CV. */
 .section:not(:first-of-type)::before {
     content: attr(data-index);
     position: absolute;
     top: var(--space-md);
-    left: var(--space-md);
+    right: var(--space-md);
     font-family: var(--font-display);
-    font-size: 0.8rem;
-    color: var(--signal-dim);
+    font-size: 1rem;
+    color: var(--signal);
     letter-spacing: 0.1em;
 }
 .section:not(:first-of-type) {
-    border-top: 1px solid var(--border);
+    border-top: 2px dashed var(--signal);
 }
 
 .container {
@@ -539,9 +536,6 @@ button:hover {
         display: block;
         text-align: center;
     }
-    /* Skills section is genuinely hidden on mobile (see .skills{display:none}
-       below); hiding just the nav link keeps the two in sync instead of
-       leaving a dead in-page anchor. */
     .nav-list li a[href="#skills"] {
         display: none;
     }
@@ -702,7 +696,7 @@ button:hover {
     background-color: var(--bg-card);
     color: var(--text-card);
     border: 1px solid var(--border);
-    border-left: 2px solid var(--signal-dim);
+    border-left: 3px solid var(--signal-dim);
     border-radius: var(--radius);
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     padding: var(--space-md);
@@ -737,7 +731,7 @@ button:hover {
 }
 .card-pic:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 12px rgba(72, 229, 194, 0.15);
+    box-shadow: 0 4px 12px rgba(72, 229, 194, 0.45);
 }
 
 .lightbox {
@@ -809,7 +803,8 @@ button:hover {
 .references-index-container {
     height: auto;
     min-height: 80vh;
-    padding-top: 12vh;
+    width: 100%;
+    padding: 10vh 10vw 20vh;
 }
 
 .filter-bar {
