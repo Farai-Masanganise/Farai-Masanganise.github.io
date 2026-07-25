@@ -68,6 +68,11 @@ function renderProjects() {
             </a>`
               : `<p class="muted-note">Private repository — code not publicly available.</p>`
             }
+
+            ${project.live
+            ?`<a href="${project.live}" target="_blank" rel="noopener">
+                View live Site
+            </a>`: ``}
         </div>
     `).join('');
 }

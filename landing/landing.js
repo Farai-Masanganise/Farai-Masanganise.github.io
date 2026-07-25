@@ -50,7 +50,7 @@ async function loadRecentProjects() {
 
     container.innerHTML = recentProjects.map(project => `
         <div class="container-card">
-            <h5>${project.title}</h5>
+            <h2>${project.title}</h2>
 
             <p>${project.description}</p>
 
@@ -68,6 +68,11 @@ async function loadRecentProjects() {
             <a href="../projects/projects.html#${project.id}">
                 View Project Details
             </a>
+
+            ${project.live
+            ?`<a href="${project.live}" target="_blank" rel="noopener">
+                View live Site
+            </a>`: ``}
         </div>
     `).join('');
   } catch (err) {
@@ -94,7 +99,7 @@ async function loadRecentCertificates() {
 
     container.innerHTML = recentCertificates.map(cert => `
         <div class="container-card">
-            <h5>${cert.title}</h5>
+            <h2>${cert.title}</h2>
 
             <div class="card-row">
                 <p>Issuer: ${cert.issuer}</p>
@@ -138,7 +143,7 @@ async function loadRecentReferences() {
 
     container.innerHTML = recentReferences.map(ref => `
         <div class="container-card">
-            <h5>${ref.name}</h5>
+            <h2>${ref.name}</h2>
 
             <p>${ref.position} – ${ref.organization}</p>
 

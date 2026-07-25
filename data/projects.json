@@ -7,7 +7,8 @@
         "tech": "HTML, CSS, JavaScript, PHP, SQL",
         "image": "../images/projects/propertyhill.png",
         "link": "../projects/projects.html?id=propertyhill",
-        "repoUrl": "",        
+        "repoUrl": "",
+        "live":"https://www.propertyhillrealty.com",        
         "date": "2026-07-04"
     },
     {
@@ -18,7 +19,8 @@
         "tech": "HTML, CSS, JavaScript, PHP, SQL",
         "image": "../images/projects/greenlink.png",
         "link": "../projects/projects.html?id=greenlink",
-        "repoUrl": "", 
+        "repoUrl": "",
+        "live":"",
         "date": "2026-04-19"
     },
         {
@@ -29,7 +31,8 @@
         "tech": "Java, XML",
         "image": "../images/projects/geofencing.png",
         "link": "../projects/projects.html?id=geofencing",
-        "repoUrl": "", 
+        "repoUrl": "",
+        "live":"",
         "date": "2026-04-1"
     },
     {
@@ -40,7 +43,8 @@
         "tech": "C#, SQL",
         "image": "../images/projects/chapman-golf.png",
         "link": "../projects/projects.html?id=chapman-golf",
-        "repoUrl": "",         
+        "repoUrl": "",
+        "live":"",         
         "date": "2025-03-28"
     }
 ]
