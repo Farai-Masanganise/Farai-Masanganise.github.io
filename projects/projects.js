@@ -71,7 +71,7 @@ function renderProjects() {
 
             ${project.live
             ?`<a href="${project.live}" target="_blank" rel="noopener">
-                View live Site
+                Go To live Site
             </a>`: ``}
         </div>
     `).join('');

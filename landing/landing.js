@@ -64,12 +64,12 @@ async function loadRecentProjects() {
             >
 
             <a href="../projects/projects.html#${project.id}">
-                View Project Details
+                Go To Project Details
             </a>
 
             ${project.live
             ?`<a href="${project.live}" target="_blank" rel="noopener">
-                View Live Site
+                Go To Live Site
             </a>`: ``}
         </div>
     `).join('');
