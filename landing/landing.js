@@ -198,9 +198,6 @@ async function loadContacts() {
       `;
     }).join('');
 
-    if (window.lucide) {
-      lucide.createIcons();
-    }
   } catch (err) {
     console.error('loadContacts failed:', err);
     renderLoadError(container, 'contact details');
