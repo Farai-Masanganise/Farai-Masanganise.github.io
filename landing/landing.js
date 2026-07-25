@@ -69,7 +69,7 @@ async function loadRecentProjects() {
 
             ${project.live
             ?`<a href="${project.live}" target="_blank" rel="noopener">
-                View live Site
+                View Live Site
             </a>`: ``}
         </div>
     `).join('');
