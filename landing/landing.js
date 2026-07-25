@@ -212,7 +212,7 @@ loadContacts();
 // Footer year
 const footerCopy = document.getElementById('footer-copy');
 if (footerCopy) {
-  footerCopy.textContent = `© ${new Date().getFullYear()} Farai Dylan Masanganise`;
+  footerCopy.textContent = `© ${new Date().getFullYear()} | Farai Dylan Masanganise`;
 }
 // Footer hiding
 const footer = document.getElementById('footer');
