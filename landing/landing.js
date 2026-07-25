@@ -144,7 +144,12 @@ async function loadRecentReferences() {
 
             <p>Address: ${ref.address}</p>
 
-            <p>Tel: ${ref.phone}</p>
+            <p>
+                Tel: 
+                <a href="tel:${ref.tel}">
+                  ${ref.phone}    
+                </a>
+            </p>
 
             <p>
                 Email:

@@ -5,6 +5,7 @@
     "organization": "Harare Intitute of Technology",
     "address": "P.O. Box 277 Ganges Rd, Belvedere, Harare",
     "phone": "+263 717 279 132",
+    "tel": "+263717279132",
     "email": "fjohna@hit.ac.zw"
   },
   {
@@ -13,6 +14,7 @@
     "organization": "Speciss College",
     "address": "Herbert Chitepo / 3rd Street, P.O. BOX 2713, Harare",
     "phone": "+263 242 708494-7",
+    "tel": "+263242708494-7",
     "email": "jane@speciss.co.zw"
   },
   {
@@ -21,6 +23,7 @@
     "organization": "Goromonzi High School",
     "address": "P Bag 1, Goromonzi",
     "phone": "+263 782 805 999",
+    "tel": "+263782805999",    
     "email": "goromonzihighhead@zol.co.zw"
   }
 ]
