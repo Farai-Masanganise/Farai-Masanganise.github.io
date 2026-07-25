@@ -47,31 +47,28 @@ async function loadRecentProjects() {
     const recentProjects = projects.slice(0, 2);
 
     container.innerHTML = recentProjects.map(project => `
-        <div class="container-card">
-            <h2>${project.title}</h2>
+      <div class="container-card">
+        <h2>${project.title}</h2>
 
-            <p>${project.description}</p>
+        <p>
+          <strong>Tech:</strong> ${project.tech}
+        </p>
+          
+        <p>${project.description}</p>
 
-            <p>
-                <strong>Tech:</strong> ${project.tech}
-            </p>
+        <div class="card-links">
+          <a href="../projects/projects.html#${project.id}">
+            View Full Details
+          </a>
 
-            <img
-                src="${project.image}"
-                alt="${project.title}"
-                class="card-pic"
-                loading="lazy"
-            >
-
-            <a href="../projects/projects.html#${project.id}">
-                Go To Project Details
+          ${project.live ? `
+            <a href="${project.live}" target="_blank" rel="noopener">
+              Go To Live Site
             </a>
-
-            ${project.live
-            ?`<a href="${project.live}" target="_blank" rel="noopener">
-                Go To Live Site
-            </a>`: ``}
+          `:`
+          `}
         </div>
+     </div>
     `).join('');
   } catch (err) {
     console.error('loadRecentProjects failed:', err);
