@@ -29,8 +29,6 @@ document.addEventListener("keydown", (e) => {
 });
 
 // Shared helper: renders a simple error state inside a container
-// so a bad/missing JSON file degrades gracefully instead of leaving
-// the section silently blank with an uncaught rejection in the console.
 function renderLoadError(container, label) {
   if (!container) return;
   container.innerHTML = `<p class="muted-note">Unable to load ${label} right now. Please try again later.</p>`;
@@ -168,10 +166,6 @@ async function loadRecentReferences() {
 loadRecentReferences();
 
 // Load Contact Info
-// (Rebuilt to match the template-literal pattern used above — the
-// previous version built DOM nodes by hand with appendChild, which
-// worked but was a different, harder-to-maintain style from the other
-// three loaders and had no error handling if the fetch failed.)
 async function loadContacts() {
   const container = document.getElementById("contact-list");
 
@@ -210,13 +204,11 @@ async function loadContacts() {
 
 loadContacts();
 
-// Footer year — kept current automatically instead of a hardcoded year
-// that goes stale every January.
+// Footer year
 const footerCopy = document.getElementById('footer-copy');
 if (footerCopy) {
   footerCopy.textContent = `© ${new Date().getFullYear()} Farai Dylan Masanganise`;
 }
-
 // Footer hiding
 const footer = document.getElementById('footer');
 
