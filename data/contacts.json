@@ -1,37 +1,37 @@
  [
     {
       "type": "Mobile",
-      "icon": "phone",
+      "icon": "../images/svg/telephone.svg",
       "value": "+263 716 325 611",
       "href": "tel:+263716325611"
     },
     {
       "type": "Email",
-      "icon": "mail",
+      "icon": "../images/svg/email.svg",
       "value": "FDylan.Dev@gmail.com",
       "href": "mailto:FDylan.Dev@gmail.com"
     },
     {
       "type": "GitHub",
-      "icon": "github",
+      "icon": "../images/svg/github.svg",
       "value": "View Profile",
       "href": "https://github.com/Farai-Masanganise"
     },
     {
       "type": "LinkedIn",
-      "icon": "linkedin",
+      "icon": "../images/svg/linkedin.svg",
       "value": "View Profile",
       "href": "https://www.linkedin.com/in/developer-masanganisee"
     },
     {
     "type": "WhatsApp",
-    "icon": "message-circle",
-    "value": "Chat on WhatsApp",
+    "icon": "../images/svg/whatsapp.svg",
+    "value": "Chat With me on WhatsApp",
     "href": "https://wa.me/263716325611"
     },
     {
       "type": "Location",
-      "icon": "map-pin",
+      "icon": "../images/svg/location-pin.svg",
       "value": "Harare, Zimbabwe"
     }
   ]

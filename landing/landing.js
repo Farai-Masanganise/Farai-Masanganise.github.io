@@ -188,8 +188,9 @@ async function loadContacts() {
       return `
         <div class="container-card">
             <span class="contact-type">
-                <i data-lucide="${item.icon}"></i> ${item.type}:
+                <i data-lucide=""></i> ${item.type}:
             </span>
+            <img class="card-icon" src="${item.icon}" alt="">
             <span class="contact-detail">${detailMarkup}</span>
         </div>
       `;
